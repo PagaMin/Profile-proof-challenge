@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-magenta: Magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.bg-desktop-top {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-desktop-bottom {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-mobile-top,
+.bg-mobile-bottom {
+    display: none;
+}
+
+main {
+    z-index: 1000;
+}
+
+.above {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* TEXT LEFT */
+
+.text-left {
+    width: 25.875rem;
+    height: 15.438rem;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.desc {
+    color: var(--dark-grayish-magenta);
+    margin-top: 1.875rem;
+}
+
+/* RATED */
+
+.favorites {
+    max-width: 34.125rem;
+    height: 13.188rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rated {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+.stats {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+    margin-top: 1.063rem;
+    width: 27.813rem;
+    height: 3.5rem;
+    background-color: #f7f2f8;
+    border-radius: 0.563rem;
+}
+
+.stats:first-child {
+    margin-top: 0px;
+}
+
+.mid {
+    margin-left: 3.125rem;
+}
+
+.final {
+    margin-left: 6rem;
+}
+
+/* FEEDBACK */
+
+.container-feedback {
+    max-width: 69.875rem;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.875rem;
+}
+
+.avatar-image {
+    border-radius: 50%;
+}
+
+.feedback {
+    width: 21.875rem;
+    height: 14.625rem;
+    background-color: var(--very-dark-magenta);
+    border-radius: 0.5rem;
+    padding: 1.8rem 1.688rem;
+}
+
+.commentary {
+    color: var(--white);
+    margin-top: 1.813rem;
+}
+
+.name {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.verified {
+    color: var(--soft-pink);
+}
+
+.name-avatar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.irene {
+    margin-top: 1rem;
+}
+
+.anne {
+    margin-top: 2rem;
+}
+
+@media (max-width: 935px) {
+    .text-left {
+        text-align: center;
+    }
+
+    .above {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .feedback:first-child {
+        margin-top: 3.188rem;
+    }
+
+    .irene {
+        margin-top: 3.188rem;
+    }
+
+    .mid {
+        margin-left: 0;
+    }
+
+    .final {
+        margin-left: 0rem;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    .favorites {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 955px) {
+    .above {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    .text-left {
+        text-align: center;
+    }
+
+    .mid {
+        margin-left: 0;
+    }
+
+    .final {
+        margin-left: 0rem;
+    }
+
+    .feedback:first-child {
+        margin-top: 3.188rem;
+    }
+
+    .irene {
+        margin-top: 3.188rem;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .feedback {
+        margin-top: 0.5rem;
+    }
+
+    .feedback:first-child {
+        margin-top: 1.5rem;
+    }
+
+    .irene {
+        margin-top: 1.5rem;
+    }
+
+}
